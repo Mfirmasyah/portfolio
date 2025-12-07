@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/portfolio/',  // ← INI YANG BENAR
+  base: '/portfolio/',
   plugins: [
     react(),
     tailwindcss(),
@@ -15,7 +15,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: 'index.html'
+      input: {
+        main: './index.html'  // ← PASTIKAN INI
+      }
     }
   }
 })
