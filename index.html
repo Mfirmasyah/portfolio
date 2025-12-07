@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- GANTI INI: -->
+  <link rel="icon" type="image/svg+xml" href="vite.svg" />
+  <!-- BUKAN: href="/portfolio/vite.svg" -->
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Frontend Developer</title>
-  <!-- Preload untuk performa lebih baik -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,10 +16,8 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   
-  <!-- Script untuk load theme dari localStorage -->
   <script>
     (function() {
-      // Cek localStorage untuk theme preference
       const savedTheme = localStorage.getItem('theme');
       const html = document.documentElement;
       
@@ -26,7 +26,6 @@
       } else if (savedTheme === 'light') {
         html.classList.remove('dark');
       } else {
-        // Jika tidak ada preference, gunakan system preference
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           html.classList.add('dark');
         }
