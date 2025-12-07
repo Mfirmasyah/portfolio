@@ -24,7 +24,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
             <span className="block text-3xl sm:text-4xl md:text-5xl dark:text-white transition-colors">Hi, I'm</span>
             <span className="bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent block mt-2">
-              M. FIRMANSYA
+              M. FIRMANSYAH
             </span>
           </h1>
           
