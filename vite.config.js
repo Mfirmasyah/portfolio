@@ -4,12 +4,13 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'  // IMPORT INI
 
 export default defineConfig({
+  base: '/portfolio',
   plugins: [
     react(),
     tailwindcss(),  // TAMBAHKAN INI
   ],
   server: {
-    prot: 5173,
+    port: 5173,
     host: true
   }
 })
